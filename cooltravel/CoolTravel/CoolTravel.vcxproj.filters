@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\CoolTravel.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CoolTravel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\波涛汹涌.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\非是主流.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\浩瀚星空.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\唯美花草.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\夕阳风车.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\png1.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\btn.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="map.htm">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="mapold.htm">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CoolTravel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CoolTravelDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgNewTrip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgOldTrip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TraButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="explorer1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTripName.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="exif.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPicExif.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAboutMF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAboutMember.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAboutFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgHelp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTripPic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CoolTravel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CoolTravelDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgNewTrip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgOldTrip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TraButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="explorer1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTripName.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exif.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPicExif.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAboutMF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAboutMember.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAboutFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgHelp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTripPic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CoolTravel.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap6.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\joseph.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

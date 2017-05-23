@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+		#allmap{height:300px;width:100%;}
+		#r-result{width:100%; font-size:14px;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PdZNZIZX7WbZiwsP9ApbquRh"></script>
+	<title>行程加载</title>
+  </head>
+  
+  <body>
+    <!--百度地图容器-->
+    <div style="width:580px;height:445px;border:#ccc solid 0px;font-size:12px" id="map"></div>    
+  </body>
+  <script type="text/javascript">
+
+      var mypoint = new Array();
+      var text;
+      var Message_from;
+      var num = 0;
+           
+      //创建和初始化地图函数：
+      function initMap() {
+          createMap(); //创建地图
+          setMapEvent(); //设置地图事件
+          addMapControl(); //向地图添加控件
+          addMapOverlay(); //向地图添加覆盖物
+      }
+      function createMap() {
+          map = new BMap.Map("map");
+          map.centerAndZoom(new BMap.Point(106.3026970000,29.6015240000),16);
+      }
+      function setMapEvent() {
+          map.enableScrollWheelZoom();
+          map.enableKeyboard();
+          map.enableDragging();
+          map.enableDoubleClickZoom()
+      }
+      function addClickHandler(target, window) {
+          target.addEventListener("click", function () {
+              target.openInfoWindow(window);
+          });
+      }
+      function addMapOverlay() {
+      }
+      //向地图添加控件
+      function addMapControl() {
+          var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+          scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+          map.addControl(scaleControl);
+          var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+          map.addControl(navControl);
+          var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true });
+          map.addControl(overviewControl);
+      }
+
+      function drivecar() 
+      {         
+          var p1 = mypoint[0];
+          var p2 = mypoint[num - 1];
+          var Point = new Array();
+          //去掉起点终点
+          for (var m = 0; m < num - 2; m++) {
+              Point[m] = mypoint[m + 1];
+          }
+                
+          var driving = new BMap.DrivingRoute(map, { renderOptions: { map: map, autoViewport: true} });
+          driving.search(p1, p2, { waypoints: Point }); //waypoints表示途经点    
+      }
+
+
+
+      function addMarker(point) {
+          var marker = new BMap.Marker(point);
+
+          var sContent =
+	"<h4 style='margin:0 0 5px 0;padding:0.2em 0'>行程描述</h4>" +
+	"<img style='float:right;margin:4px' id='imgDemo' src = " + text + " width='139' height='104' title='天安门'/>" +
+	"<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + Message_from + "</p>" +
+	"</div>";
+
+          var marker = new BMap.Marker(point);
+          var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+          map.addOverlay(marker);
+          marker.addEventListener("click", function () {
+              this.openInfoWindow(infoWindow);
+              //图片加载完毕重绘infowindow
+              document.getElementById('imgDemo').onload = function () {
+                  infoWindow.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+              }
+          });
+      }
+
+      function Picture(string) {
+          text = string;
+          //alert(string);
+      }
+
+      function Message(str) {
+          Message_from = str;
+          //alert(str);
+      }
+
+      function MakePoint(JD, WD) {
+          var point = new BMap.Point(JD, WD);
+          mypoint[num] = point;
+          num++;
+          var marker1 = new BMap.Marker(point);  // 创建标注
+          window.map.addOverlay(marker1);              // 将标注添加到地图中
+          addMarker(point);
+          map.panTo(point);
+      }
+
+      function goodview() {
+          map.setViewport(mypoint);
+      }
+
+      var map;
+      initMap();
+      
+
+
+  </script>
+</html>
