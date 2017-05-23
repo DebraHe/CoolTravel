@@ -12,12 +12,14 @@ CoolTravel is a desktop application. Its main function is to not only help us re
 行程记录系统是一款桌面应用程序。它的主要功能是根据自动导入移动存储设备中的照片或者视频的拍摄时间、GPS信息帮助我们把出行路线记录下来，而且还能将这些照片或者视频标记在出行路线中，清晰而立体地展示了当时的情景。不仅如此，它还有很多附加功能，如在每个经过的地方上面配上游记、心得，保存此出行路线及照片视频相关信息。
 ```
 ## Configuration diagram（配置图）
-    此软件目前只能在VS2013上面运行，并安装此组件。
-    https://github.com/DebraHe/CoolTravel/blob/master/vc_mbcsmfc.exe
-    因为用到了数据库，所以请下载miscosoft office相关组件——access。
-    This software is currently only available on VS2013 and needto install this component.
-    https://github.com/DebraHe/CoolTravel/blob/master/vc_mbcsmfc.exe
-    Because the use of the database, so please download miscosoft office related components - access.
+```
+此软件目前只能在VS2013上面运行，并安装此组件。
+https://github.com/DebraHe/CoolTravel/blob/master/vc_mbcsmfc.exe
+因为用到了数据库，所以请下载miscosoft office相关组件——access。
+This software is currently only available on VS2013 and needto install this component.
+https://github.com/DebraHe/CoolTravel/blob/master/vc_mbcsmfc.exe
+Because the use of the database, so please download miscosoft office related components - access.
+```
 ## Use tutorials（使用教程）
 ```
 User login: single user name and single password to sign in;
