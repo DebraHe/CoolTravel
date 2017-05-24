@@ -4,10 +4,10 @@ CoolTravel is a project using vs2013 and access database to complete it.
 行程记录系统采用VS2013的MFC以及access数据库完成的一个调用百度地图API的程序。
 ```
 ## Renderings（效果图）
-![](https://github.com/DebraHe/CoolTravel/blob/master/Renderings（效果图）/查看以往行程.png)  
-![](https://github.com/DebraHe/CoolTravel/blob/master/Renderings（效果图）/新建一个行程.png) 
-![](https://github.com/DebraHe/CoolTravel/blob/master/Renderings（效果图）/照片信息提取器.png) 
-![](https://github.com/DebraHe/CoolTravel/blob/master/Renderings（效果图）/帮助.png)
+![](https://github.com/DebraHe/CoolTravel/blob/master/Renderings（效果图）/查看以往行程.png "查看以往行程")  
+![](https://github.com/DebraHe/CoolTravel/blob/master/Renderings（效果图）/新建一个行程.png "新建一个行程") 
+![](https://github.com/DebraHe/CoolTravel/blob/master/Renderings（效果图）/照片信息提取器.png "照片信息提取器") 
+![](https://github.com/DebraHe/CoolTravel/blob/master/Renderings（效果图）/帮助.png "帮助")
 ## Function introduction（功能介绍） 
 ```
 CoolTravel is a desktop application. Its main function is to not only help us record the travel route according to the photos or videos' shooting time and GPS information in the automatic import of mobile storage devices, but also mark these photos or videos in the travel route, clearly and three-dimensionally display on the scene. Not only that, it also has a lot of additional features, such as record travel experiences in every passing place, save this travel route, photos, videos and related information.
